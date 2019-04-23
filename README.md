@@ -14,9 +14,12 @@
  
 ```
 跳过一切，直接使用？
-使用docker pull到本地
+    服务部署：
     docker pull leodpen/eureka:latest
     
+    本地使用：
+    docker pull leodpen/eureka:local
+   
     docker run -p 8761:8761 -d leodpen/eureka
     (端口自行选择映射)
 
