@@ -20,7 +20,13 @@
     本地使用：
     docker pull leodpen/eureka:local
    
-    docker run -p 8761:8761 -d leodpen/eureka
+    docker run -p 8761:8761 -d leodpen/eureka:{tag}
     (端口自行选择映射)
 
 ```
+
+### 注：如果要进入容器内部查看，使用后缀使用.sh而不是/bin(for use alpine).
+  
+  一个示范: docker exec -it eureka.jar .sh
+  
+ btw: Repo仍增加中.(includes java11)
